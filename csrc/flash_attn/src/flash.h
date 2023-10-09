@@ -77,6 +77,8 @@ struct Flash_fwd_params : public Qkv_params {
     int * __restrict__ cu_seqlens_q;
     int * __restrict__ cu_seqlens_k;
 
+    int * __restrict__ cache_k_offsets;
+
     int *__restrict__ blockmask;
 
     // The K_new and V_new matrices.
